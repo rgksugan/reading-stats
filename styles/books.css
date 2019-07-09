@@ -1,0 +1,205 @@
+.books-container {
+    max-width: 45rem;
+    min-width: 40rem;
+}
+
+.books .counter {
+    color: #d28445;
+}
+
+.books .timeline {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.books .timeline path.edge {
+    stroke-width: 1px;
+    fill: none;
+    shape-rendering: crispEdges;
+}
+
+.books .timeline line {
+    shape-rendering: crispEdges;
+    stroke-width: 2px;
+    stroke: #ddd;
+}
+
+.books .content {
+    width: 50%;
+    float: left;
+}
+
+.books .desc {
+    font-size: .7rem;
+    font-weight: light;
+    color: #aaa;
+}
+
+.books .card {
+    position: absolute;
+    border: 1px solid #d28445;
+    font-size: .7rem;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+    cursor: pointer;
+}
+
+.books .card span {
+    padding: 5px;
+    display: inline-block;
+}
+
+.books svg .axis text {
+    font-size: 10px;
+    fill: #aaa;
+}
+.books svg .axis path.domain, .axis line {
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+}
+
+.books svg .axis .tick line {
+    stroke: #dedede;
+    shape-rendering: crispEdges;
+}
+
+.books svg .y.axis .tick:first-child text {
+    display: none;
+}
+
+.books svg.distribution .y.axis text {
+    font-size: 9px;
+}
+
+.books svg path.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+
+.books .cells path {
+    fill: none;
+    pointer-events: all;
+}
+
+.books .cells :hover circle {
+    fill: #75b5aa !important;
+    stroke: #75b5aa;
+    stroke-width: 3px;
+}
+
+.books .timeline .axis path.domain, .axis line {
+    fill: none;
+    stroke: none;
+}
+
+.books .timeline .axis .tick line {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+
+
+.books .distribution .y.axis .domain {
+    stroke: none;
+}
+
+#timeline-publication-old {
+    margin-top: 30px;
+}
+
+#timeline-publication-current {
+    margin-bottom: 30px;
+}
+
+
+.books #page-per-year .y.axis .domain, .books #book-per-year .y.axis .domain, .books #book-per-shelf .y.axis .domain {
+    stroke: none;
+}
+
+.books #page-per-year .bar, .books #book-per-year .bar {
+    fill: #fc8d59;
+}
+
+.books #book-per-year .count, .books #book-per-shelf .count {
+    text-anchor: end;
+    font-size: 10px;
+    fill: white;
+    font-family: sans-serif;
+}
+
+.books #book-per-shelf .count {
+    fill: #999;
+    text-anchor: start;
+}
+
+.books #book-per-shelf .y.axis text {
+    font-size: 12px;
+}
+
+.desc.cover {
+    margin: 15px 0 0 0;
+}
+
+.book-group .star {
+    clear: both;
+    padding: 20px 5px 5px;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+}
+
+.book-cover {
+    float: left;
+    height: 140px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.book-cover img {
+    width: 93px;
+    max-height: 139.5px;
+    border-radius: 0;
+    margin: 0 5px;
+}
+
+.books #authors .top.axis .domain {
+    stroke: none;
+}
+
+.clear {
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.books #tags {
+    margin-top: 10px;
+}
+
+.books a.tag {
+    color: #d28445;
+    border: 1px solid #d28445;
+    font-size: .7rem;
+    margin: 8px 5px 0 0;
+    padding: 2px 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.books a.tag.active {
+    background: #d28445;
+    color: white;
+}
+
+#selected-tag {
+    color: #d28445;
+}
+
+.books .tag-count {
+    font-size: .5rem;
+}
