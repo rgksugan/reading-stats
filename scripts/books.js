@@ -817,7 +817,7 @@
       .append("img")
       .attr("src", function(d) {
         if (d.isbn.substr(1).slice(0, -1)) {
-          return "http://covers.openlibrary.org/b/isbn/" + d.isbn.substr(1).slice(0, -1) + ".jpg";
+          return "https://covers.openlibrary.org/b/isbn/" + d.isbn.substr(1).slice(0, -1) + ".jpg";
         } else {
           return "images/book.png";
         }
